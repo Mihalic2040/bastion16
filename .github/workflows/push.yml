@@ -50,6 +50,8 @@ jobs:
         with:
           # Upload index folder (after copying files)
           path: './index'
+          name: 'my-pages-artifact'  # Specify a unique name
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
